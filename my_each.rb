@@ -1,9 +1,12 @@
 def my_each(collection)
-  i=0
-  while i<collection.length
-    yield collection[i]
+  if block_given?
+    i=0
+    while i<collection.length
+      yield collection[i]
       puts i
       i=i+1
-  end
-  collection
+    end
+    collection
+  else
+    puts "no block was given"
 end
