@@ -8,6 +8,6 @@ def my_each(collection)
     end
     collection
   else
-    puts "no block was given"
+    "no block was given"
   end
 end
